@@ -1,0 +1,25 @@
+{
+  "name": "W12D04_Redux",
+  "version": "1.0.0",
+  "description": "ddd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon main.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlaaSaleh7/W12D04_Redux.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlaaSaleh7/W12D04_Redux/issues"
+  },
+  "homepage": "https://github.com/AlaaSaleh7/W12D04_Redux#readme",
+  "dependencies": {
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0"
+  }
+}
