@@ -1,25 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
 
 //context providers
-import RegisterProvider from './context/register';
-import LoginProvider from './context/login';
-import NewArticleProvider from './context/newArticle';
-import DashboardProvider from './context/dashboard';
+import { Provider } from "react-redux";
+import store from "./reducer/index";
 
+
+//Create a provider and pass to it the store value
 ReactDOM.render(
-	<Router>
-		<LoginProvider>
-			<RegisterProvider>
-				<NewArticleProvider>
-					<DashboardProvider>
-						<App />
-					</DashboardProvider>
-				</NewArticleProvider>
-			</RegisterProvider>
-		</LoginProvider>
-	</Router>,
-	document.getElementById('root'),
+  <Provider store={store}>
+    <App />,
+  </Provider>,
+  document.getElementById("root")
 );
